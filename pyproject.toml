@@ -1,0 +1,30 @@
+[project]
+name = "dlopss"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dvc",
+    "ensure==1.0.2",
+    "flask",
+    "flask-cors",
+    "joblib",
+    "matplotlib",
+    "notebook",
+    "numpy",
+    "pandas",
+    "python-box==6.0.2",
+    "pyyaml",
+    "scipy",
+    "seaborn",
+    "tensorflow",
+    "tqdm",
+    "types-pyyaml",
+]
+
+[tool.uv.workspace]
+exclude = ["cw", "deltro", "dipali", "mehul", "dlops-project", "cnnclassifier", "ocr-web-app", "opencv", "dlops"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
